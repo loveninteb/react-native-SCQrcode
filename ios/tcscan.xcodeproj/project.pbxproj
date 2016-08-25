@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD6E9D8C1D478EE3001C0C96 /* tcscan.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD6E9D8B1D478EE3001C0C96 /* tcscan.h */; };
+		CD6E9D8E1D478EE3001C0C96 /* tcscan.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6E9D8D1D478EE3001C0C96 /* tcscan.m */; };
+		CD9224781D47978A0085015E /* QRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92246F1D47978A0085015E /* QRItem.m */; };
+		CD9224791D47978A0085015E /* QRMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9224711D47978A0085015E /* QRMenu.m */; };
+		CD92247A1D47978A0085015E /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9224731D47978A0085015E /* QRView.m */; };
+		CD92247B1D47978A0085015E /* ScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9224751D47978A0085015E /* ScanVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD6E9D861D478EE3001C0C96 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CD6E9D8C1D478EE3001C0C96 /* tcscan.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD6E9D881D478EE3001C0C96 /* libtcscan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtcscan.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6E9D8B1D478EE3001C0C96 /* tcscan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tcscan.h; sourceTree = "<group>"; };
+		CD6E9D8D1D478EE3001C0C96 /* tcscan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tcscan.m; sourceTree = "<group>"; };
+		CD92246C1D47978A0085015E /* qr_scan_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_scan_line@2x.png"; sourceTree = "<group>"; };
+		CD92246E1D47978A0085015E /* QRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRItem.h; sourceTree = "<group>"; };
+		CD92246F1D47978A0085015E /* QRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRItem.m; sourceTree = "<group>"; };
+		CD9224701D47978A0085015E /* QRMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRMenu.h; sourceTree = "<group>"; };
+		CD9224711D47978A0085015E /* QRMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRMenu.m; sourceTree = "<group>"; };
+		CD9224721D47978A0085015E /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		CD9224731D47978A0085015E /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		CD9224741D47978A0085015E /* ScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanVC.h; sourceTree = "<group>"; };
+		CD9224751D47978A0085015E /* ScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanVC.m; sourceTree = "<group>"; };
+		CD9224761D47978A0085015E /* ScanVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanVC.xib; sourceTree = "<group>"; };
+		CD9224771D47978A0085015E /* weixin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weixin.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD6E9D851D478EE3001C0C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD6E9D7F1D478EE3001C0C96 = {
+			isa = PBXGroup;
+			children = (
+				CD6E9D8A1D478EE3001C0C96 /* tcscan */,
+				CD6E9D891D478EE3001C0C96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD6E9D891D478EE3001C0C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD6E9D881D478EE3001C0C96 /* libtcscan.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD6E9D8A1D478EE3001C0C96 /* tcscan */ = {
+			isa = PBXGroup;
+			children = (
+				CD92246B1D47978A0085015E /* Scan */,
+				CD6E9D8B1D478EE3001C0C96 /* tcscan.h */,
+				CD6E9D8D1D478EE3001C0C96 /* tcscan.m */,
+			);
+			path = tcscan;
+			sourceTree = "<group>";
+		};
+		CD92246B1D47978A0085015E /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				CD92246C1D47978A0085015E /* qr_scan_line@2x.png */,
+				CD92246D1D47978A0085015E /* QRView */,
+				CD9224741D47978A0085015E /* ScanVC.h */,
+				CD9224751D47978A0085015E /* ScanVC.m */,
+				CD9224761D47978A0085015E /* ScanVC.xib */,
+				CD9224771D47978A0085015E /* weixin.mp3 */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		CD92246D1D47978A0085015E /* QRView */ = {
+			isa = PBXGroup;
+			children = (
+				CD92246E1D47978A0085015E /* QRItem.h */,
+				CD92246F1D47978A0085015E /* QRItem.m */,
+				CD9224701D47978A0085015E /* QRMenu.h */,
+				CD9224711D47978A0085015E /* QRMenu.m */,
+				CD9224721D47978A0085015E /* QRView.h */,
+				CD9224731D47978A0085015E /* QRView.m */,
+			);
+			path = QRView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD6E9D871D478EE3001C0C96 /* tcscan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6E9D911D478EE3001C0C96 /* Build configuration list for PBXNativeTarget "tcscan" */;
+			buildPhases = (
+				CD6E9D841D478EE3001C0C96 /* Sources */,
+				CD6E9D851D478EE3001C0C96 /* Frameworks */,
+				CD6E9D861D478EE3001C0C96 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tcscan;
+			productName = tcscan;
+			productReference = CD6E9D881D478EE3001C0C96 /* libtcscan.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD6E9D801D478EE3001C0C96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wuxiaochen;
+				TargetAttributes = {
+					CD6E9D871D478EE3001C0C96 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CD6E9D831D478EE3001C0C96 /* Build configuration list for PBXProject "tcscan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD6E9D7F1D478EE3001C0C96;
+			productRefGroup = CD6E9D891D478EE3001C0C96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD6E9D871D478EE3001C0C96 /* tcscan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD6E9D841D478EE3001C0C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6E9D8E1D478EE3001C0C96 /* tcscan.m in Sources */,
+				CD92247A1D47978A0085015E /* QRView.m in Sources */,
+				CD9224791D47978A0085015E /* QRMenu.m in Sources */,
+				CD92247B1D47978A0085015E /* ScanVC.m in Sources */,
+				CD9224781D47978A0085015E /* QRItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD6E9D8F1D478EE3001C0C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD6E9D901D478EE3001C0C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD6E9D921D478EE3001C0C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD6E9D931D478EE3001C0C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD6E9D831D478EE3001C0C96 /* Build configuration list for PBXProject "tcscan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6E9D8F1D478EE3001C0C96 /* Debug */,
+				CD6E9D901D478EE3001C0C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6E9D911D478EE3001C0C96 /* Build configuration list for PBXNativeTarget "tcscan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6E9D921D478EE3001C0C96 /* Debug */,
+				CD6E9D931D478EE3001C0C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD6E9D801D478EE3001C0C96 /* Project object */;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/taixiang/AndroidStudioProjects/ScanProject/android/scan/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <!-- From: file:/Users/taixiang/AndroidStudioProjects/ScanProject/android/scan/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">NativeTCScan</string>
+</resources>
