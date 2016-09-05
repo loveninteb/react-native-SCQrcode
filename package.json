@@ -1,6 +1,6 @@
 {
-  "name": "react-native-tcscan",
-  "version": "1.0.1",
+  "name": "react-native-scqrcode",
+  "version": "0.0.2",
   "description": "support ios && android qrcode scan",
   "main": "yes",
   

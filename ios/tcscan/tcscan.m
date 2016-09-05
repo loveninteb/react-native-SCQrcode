@@ -7,6 +7,7 @@
 //
 
 #import "tcscan.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation tcscan
 
@@ -26,14 +27,49 @@ RCT_EXPORT_METHOD(scan:(RCTResponseSenderBlock)callback){
     rnScan.qrUrlBlock = ^(NSString *url){
         callback(@[url]);
     };
-    //  [self.navigationController pushViewController:svc animated:NO];
+    
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *rootController = UIApplication.sharedApplication.delegate.window.rootViewController;
-        //    [rootController.navigationController pushViewController:rnScan animated:YES];
-        [rootController presentViewController:rnScan animated:YES completion:nil];
+        
+        
+        [self scanQrCode];
+        
+        
+        
     });
     
 }
+
+
+- (void)scanQrCode{
+    
+    //判断是否有访问相机的权限
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    
+    if(authStatus == AVAuthorizationStatusDenied){
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"该应用没有相机的使用权限，请打开设置并找到您的应用，开启相机权限" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+        
+        return;
+    }
+    
+    if (![self validateCamera]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"没有摄像头或摄像头不可用" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+        
+    }else{
+        UIViewController *rootController = UIApplication.sharedApplication.delegate.window.rootViewController;
+        [rootController presentViewController:rnScan animated:YES completion:nil];
+    }
+}
+
+
+//检测摄像头是否可用
+- (BOOL)validateCamera {
+    return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] &&
+    [UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear];
+}
+
 
 @end

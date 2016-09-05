@@ -8,7 +8,6 @@
 
 #import "ScanVC.h"
 #import <AVFoundation/AVFoundation.h>
-//#import "MBProgressHUD+NJ.h"
 #import "QRView.h"
 
 
@@ -26,13 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title  = @"扫描二维码";
-    self.navigationController.navigationBarHidden = NO;
-    //修改导航栏左侧箭头颜色
-//    CommonTool *tool= [[CommonTool alloc]init];
-//    self.navigationController.navigationBar.tintColor = [tool getColor:@"f0741a"];
-  
-//  [MBProgressHUD showMessageWithLoad:@"正在加载相机" toView:nil];
     [self performSelector:@selector(startScan) withObject:nil afterDelay:0.1f];
 
 }
@@ -179,15 +171,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 
 @end
